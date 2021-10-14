@@ -1,0 +1,65 @@
+.menu {
+  margin: 0;
+  background-color: $colorBlue;
+
+  &__content {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    padding: 24px 0 80px;
+  }
+
+  &__top {
+    margin-bottom: 48px;
+  }
+
+  &__list {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 48px;
+  }
+
+  &__item {
+    margin-bottom: 32px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  &__link {
+    padding-bottom: 8px;
+    text-decoration: none;
+    color: $colorWhite;
+    font-size: 22px;
+    line-height: 22px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    border-bottom: 1px solid transparent;
+
+    &:hover {
+      border-color: $colorWhite;
+    }
+  }
+
+  &__call-link {
+    display: block;
+    width: max-content;
+    text-decoration: none;
+    color: $colorWhite;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+
+    &--phone {
+      margin-bottom: 16px;
+    }
+
+    &--action {
+      padding-bottom: 8px;
+      border-bottom: 1px solid $colorWhite;
+    }
+  }
+}
